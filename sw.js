@@ -76,7 +76,7 @@ self.addEventListener('fetch', e => {
         return networkResponse.clone()
       })
       .catch(() => {
-        return new Response('Network error')
+        return caches.match('index.html');
       })
     })
   )
