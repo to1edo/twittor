@@ -3,8 +3,9 @@ const DYNAMIC_CACHE_NAME   = 'dynamic-V1';
 const INMUTABLE_CACHE_NAME = 'inmutable-V1';
 const CACHE_FILES_LIMIT    = 50;
 
+let rootDirectory = location.href.includes('github') ? '/twittor' : '/';
 const STATIC_FILES_TO_CACHE = [
-  '/',
+  rootDirectory,
   'index.html',
   'css/style.css',
   'js/app.js',
