@@ -5,20 +5,20 @@ const CACHE_FILES_LIMIT    = 50;
 
 const STATIC_FILES_TO_CACHE = [
   '/',
-  '/index.html',
-  '/css/style.css',
-  '/js/app.js',
-  '/img/favicon.ico',
-  '/img/avatars/hulk.jpg',
-  '/img/avatars/ironman.jpg',
-  '/img/avatars/spiderman.jpg',
-  '/img/avatars/thor.jpg',
-  '/img/avatars/wolverine.jpg',
+  'index.html',
+  'css/style.css',
+  'js/app.js',
+  'img/favicon.ico',
+  'img/avatars/hulk.jpg',
+  'img/avatars/ironman.jpg',
+  'img/avatars/spiderman.jpg',
+  'img/avatars/thor.jpg',
+  'img/avatars/wolverine.jpg',
 ]
 
 const INMUTABLE_FILES_TO_CACHE = [
-  '/js/libs/jquery.js',
-  '/css/animate.css',
+  'js/libs/jquery.js',
+  'css/animate.css',
   'https://fonts.googleapis.com/css?family=Lato:400,300',
   'https://fonts.googleapis.com/css?family=Quicksand:300,400',
   'https://use.fontawesome.com/releases/v5.3.1/css/all.css'
