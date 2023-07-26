@@ -1,6 +1,9 @@
 //service worker registration
+
+let swDirectory = location.href.includes('github') ? '/twittor/sw.js' : '/sw.js';
+
 if(navigator.serviceWorker){
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register(swDirectory);
 }
 
 
