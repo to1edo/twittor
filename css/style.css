@@ -17,6 +17,10 @@ body{
   overflow-y: auto;
   height: 100vh;
   max-height: 100vh;
+
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 /* Personalizados */
