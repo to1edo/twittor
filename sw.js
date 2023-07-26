@@ -7,6 +7,7 @@ let rootDirectory = location.href.includes('github') ? '/twittor' : '/';
 const STATIC_FILES_TO_CACHE = [
   rootDirectory,
   'index.html',
+  'offline.html',
   'css/style.css',
   'js/app.js',
   'img/favicon.ico',
@@ -15,6 +16,7 @@ const STATIC_FILES_TO_CACHE = [
   'img/avatars/spiderman.jpg',
   'img/avatars/thor.jpg',
   'img/avatars/wolverine.jpg',
+  'img/icons/icon-152x152.png'
 ]
 
 const INMUTABLE_FILES_TO_CACHE = [
@@ -76,7 +78,7 @@ self.addEventListener('fetch', e => {
         return networkResponse.clone()
       })
       .catch(() => {
-        return caches.match('index.html');
+        return caches.match('offline.html');
       })
     })
   )
